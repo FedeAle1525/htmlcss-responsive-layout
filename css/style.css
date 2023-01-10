@@ -34,6 +34,8 @@ a {
     --purple: #9792E4;
     --dark: #333333;
     --yellow: #FDC15F;
+    --white: white;
+    --black: black;
 }
 
 /* CONTAINER */
@@ -54,6 +56,17 @@ a {
 
 .space-between {
     justify-content: space-between;
+}
+
+/* BUTTON */
+
+.button{
+    border-radius: 999px;
+}
+
+.button-white{
+    background-color: var(--white);
+    color: var(--black);
 }
 
 
