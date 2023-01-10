@@ -35,3 +35,62 @@ a {
     --dark: #333333;
     --yellow: #FDC15F;
 }
+
+/* CONTAINER */
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ROW */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+/* HEADER */
+
+.main-header {
+    background-color: var(--blue);
+    padding: 19px 0;
+    color:  white;
+}
+
+.main-header nav.row {
+    align-items: center;
+}
+
+.nav-item a {
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+/* MEDIAQUERY HEADER */
+
+@media only screen and (max-width: 991px) {
+    .menu-hamburger {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .container{
+        max-width: 900px;
+    }
+}
