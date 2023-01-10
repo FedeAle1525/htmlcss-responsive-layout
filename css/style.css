@@ -172,11 +172,16 @@ a {
 
 /* MEDIAQUERY APPLICATION */
 
-/* @media screen and (max-width: 991px){
-    .application .col-double > .card{
-        flex-direction: column;
+@media screen and (max-width: 991px){
+    .application .col-double .row-nowrap{
+        flex-wrap: wrap;
+        gap: 32px;
     }
-} */
+
+    .application .col-double .card-img{
+    flex-basis: calc(100% / 2);
+    } 
+} 
 
 @media screen and (max-width: 575px) {
     .application [class^="col-"] {
