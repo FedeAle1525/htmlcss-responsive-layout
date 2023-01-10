@@ -50,11 +50,17 @@ a {
 
 .button{
     border-radius: 999px;
+    width: max-content;
 }
 
 .button-white{
     background-color: var(--white);
     color: var(--black);
+}
+
+.button-blue{
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 /* ROW */
@@ -65,11 +71,21 @@ a {
     
 }
 
+.row-nowrap{
+    display: flex;
+}
+
 .space-between {
     justify-content: space-between;
 }
 
 /* COLUMN */
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .col-3 {
     flex-basis: calc(100%/3);
@@ -133,14 +149,34 @@ a {
     row-gap: 32px;
 }
 
+.application .col-3 > .card{
+    text-align: center;
+}
+
 .card {
     background-color: var(--lightblue);
     padding: 20px;
     border-radius: 20px;
-    min-height: 200px;
 }
 
+.card-icon{
+    color: var(--blue);
+    font-size: 52px;
+}
+
+.card-title{
+    color: var(--blue);
+    font-size: 20px;
+}
+
+
 /* MEDIAQUERY APPLICATION */
+
+/* @media screen and (max-width: 991px){
+    .application .col-double > .card{
+        flex-direction: column;
+    }
+} */
 
 @media screen and (max-width: 575px) {
     .application [class^="col-"] {
