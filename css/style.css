@@ -38,6 +38,12 @@ a {
     --black: black;
 }
 
+/* GENERAL */
+
+.align-center{
+    text-align: center;
+}
+
 /* CONTAINER */
 
 .container {
@@ -287,7 +293,6 @@ a {
 }
 
 .testimonials .row.gap{
-    text-align: center;
     padding: 20px 0;
 }
 
