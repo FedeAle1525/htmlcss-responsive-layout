@@ -321,3 +321,21 @@ a {
 .testimonials .card-cit{
     padding: 0 20px;
 }
+
+.testimonials .card-img{
+    width: 20%;
+}
+
+.testimonials .card-cit{
+    width: 80%;
+}
+
+/* MEDIAQUERY TESIMONIALS */
+
+@media screen and (max-width: 575px){
+    .testimonials .card-img,
+    .testimonials .card-cit{
+        width: unset;
+        flex-basis: 100%;
+    }
+}
