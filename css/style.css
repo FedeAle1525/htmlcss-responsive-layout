@@ -330,12 +330,20 @@ a {
     width: 80%;
 }
 
-/* MEDIAQUERY TESIMONIALS */
+/* MEDIAQUERY TEStIMONIALS */
 
 @media screen and (max-width: 575px){
     .testimonials .card-img,
     .testimonials .card-cit{
         width: unset;
         flex-basis: 100%;
+    }
+
+    .testimonials-card{
+        text-align: center;
+    }
+
+    .testimonials-card img{
+        width: 60%;
     }
 }
