@@ -114,6 +114,10 @@ a {
     flex-basis: 100%;
 }
 
+.col-2{
+    flex-basis: calc(100% / 6);
+}
+
 /* HEADER */
 
 .main-header {
@@ -284,6 +288,7 @@ a {
 
 .testimonials .row.gap{
     text-align: center;
+    padding: 20px 0;
 }
 
 .testimonials-title{
@@ -295,4 +300,24 @@ a {
     font-size: 30px;
     font-weight: 700;
     color: var(--purple);
+}
+
+.testimonials-card{
+    background-color: var(--purple);
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+.testimonials img{
+    border-radius: 50px;
+}
+
+.card-cit{
+    color: var(--white);
+    justify-content: center;
+}
+
+.testimonials .card-img,
+.testimonials .card-cit{
+    padding: 0 20px;
 }
